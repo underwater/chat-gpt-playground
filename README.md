@@ -67,7 +67,7 @@ The `id` and `conversationId` can be provided in subsequent requests to `/sendMe
 }
 ```
 
-This project also includes a simple chat interface for interacting with the ChatGPT server. This command will open the UI in your browser on `localhost:5173`.
+This project also includes a simple web app for interacting with the ChatGPT server. This command will open the app in your browser on `localhost:5173`.
 
 ```
 npm run dev
