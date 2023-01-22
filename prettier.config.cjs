@@ -3,4 +3,5 @@ module.exports = {
   singleQuote: true,
   jsxSingleQuote: true,
   quoteProps: 'as-needed',
+  printWidth: 90,
 };
