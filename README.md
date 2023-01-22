@@ -39,7 +39,7 @@ This project includes a server built with [fastify](https://www.fastify.io/), th
 node server.js
 ```
 
-Puppeteer will open chrome and authenticate, and then the server will begin accepting requests on localhost:3456. To start a conversation, send a POST request to the `/sendMessage` endpoint with the following JSON body:
+Puppeteer will open chrome and authenticate, and then the server will begin accepting requests on `localhost:3456`. To start a conversation, send a POST request to the `/sendMessage` endpoint with the following JSON body:
 
 ```
 {
@@ -57,7 +57,7 @@ The server will return a JSON payload with ChatGPT's response:
 }
 ```
 
-The `id` and `conversationId` can be provided in subsequent requests to continue the conversation. Or, omit them to start a new conversation.
+The `id` and `conversationId` can be provided in subsequent requests to `/sendMessage` to continue the same conversation. Omitting them will start a new conversation.
 
 ```
 {
@@ -67,7 +67,7 @@ The `id` and `conversationId` can be provided in subsequent requests to continue
 }
 ```
 
-This project also includes a simple chat interface for conversing with ChatGPT through the server. This command will open the UI in your browser on localhost:5173.
+This project also includes a simple chat interface for interacting with the ChatGPT server. This command will open the UI in your browser on `localhost:5173`.
 
 ```
 npm run dev
