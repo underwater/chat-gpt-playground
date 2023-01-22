@@ -40,14 +40,14 @@ export function App() {
   return (
     <div className='flex h-full flex-col overflow-hidden bg-gray-100'>
       <Nav />
-      <main className='flex flex-1 flex-col items-center overflow-auto'>
+      <main className='flex flex-1 flex-col items-center overflow-auto px-8'>
         <MessageList messages={messages} />
       </main>
-      <footer className='mb-8 flex flex-col items-center justify-center'>
+      <footer className='mb-8 flex flex-col items-center justify-center px-8'>
         <div className='flex items-center justify-center text-sm text-gray-500'>
           {isLoading && 'loading...'}
         </div>
-        <form className='mt-2 w-full max-w-4xl'>
+        <form className='mt-2 w-full max-w-3xl'>
           <textarea
             value={input}
             name='message'
@@ -60,7 +60,7 @@ export function App() {
                 sendMessage();
               }
             }}
-            rows={4}
+            rows={1}
             autoComplete='off'
             placeholder='Enter message...'
             className='w-full rounded-md border border-gray-300 focus:border-blue-400 focus:ring-blue-400'
@@ -84,13 +84,13 @@ function MessageList({ messages }: MessageListProps) {
 
   return (
     <>
-      <div className='flex w-full max-w-4xl flex-1 flex-col-reverse'>
+      <div className='flex w-full max-w-3xl flex-1 flex-col-reverse'>
         <div ref={endRef} />
         {messages.map((message, index) => (
           <div
             key={index}
             className={cx(
-              'my-3 flex max-w-2xl flex-shrink-0 rounded-lg px-3 py-1.5',
+              'my-3 flex max-w-lg flex-shrink-0 rounded-lg px-3 py-1.5',
               message.author === 'user' ? 'ml-auto bg-blue-200' : 'mr-auto bg-gray-300'
             )}
           >
