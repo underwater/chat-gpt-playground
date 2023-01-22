@@ -19,7 +19,7 @@ cd chat-gpt-playground
 npm install
 ```
 
-Create a .env file in the root of the project with your OpenAI credentials. You will also need a [NopeCha](https://nopecha.com) API key so puppeteer can solve the captcha when logging into OpenAI.
+Create a .env file in the root of the project with your OpenAI credentials. You will also need a [NopeCha](https://nopecha.com) API key so Puppeteer can solve the captcha when logging into OpenAI.
 
 ```
 EMAIL=your_email
@@ -27,13 +27,13 @@ PASSWORD=your_open_ai_password
 NOPECHA_KEY=your_nopecha_key
 ```
 
-Run ChatGPT server.
+Run ChatGPT API. This will open Chrome to authenticate and then start the backend server.
 
 ```
 node server.js
 ```
 
-Run development server.
+Run frontend development server. This will open the app in Chrome on localhost:5173.
 
 ```
 npm run dev
