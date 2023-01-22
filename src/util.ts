@@ -18,7 +18,7 @@ export async function http<T>(endpoint: string, { body, ...options }: Options = 
     config.body = JSON.stringify(body);
   }
 
-  const response = await fetch(`http://localhost:3000/${endpoint}`, config);
+  const response = await fetch(`http://localhost:3456/${endpoint}`, config);
 
   if (response.ok) {
     return (await response.json()) as T;
