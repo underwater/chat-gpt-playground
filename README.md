@@ -1,15 +1,15 @@
 # ChatGPT Playground
 
-This project is a prototype for building integrations with ChatGPT. OpenAI does not yet have an official API for ChatGPT, so this project uses the [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api). The package uses Puppeteer to authenticate through Chrome, and then afterwards you can interact with ChatGPT programmatically.
+This project is a prototype for building integrations with ChatGPT. OpenAI does not yet have an official API for ChatGPT, so this project uses [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api). The package uses Puppeteer to authenticate through Chrome, and then afterwards you can interact with ChatGPT programmatically.
 
 # Installation
 
-If you haven't already, install node. v18 or higher is required.
+If you haven't already, install Node. v18 or higher is required.
 
 Clone this repository.
 
 ```
-git clone [url here]
+git clone https://github.com/davidtkramer/chat-gpt-playground.git
 ```
 
 Navigate to project directory and install dependencies.
