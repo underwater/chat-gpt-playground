@@ -4,7 +4,11 @@ This is a prototype for building integrations with ChatGPT. OpenAI does not yet 
 
 # Installation
 
-If you haven't already, install Node. v18 or higher is required.
+If you haven't already, install [Node](https://nodejs.org/en). v18 or higher is required.
+
+```
+brew install node
+```
 
 Clone this repository.
 
