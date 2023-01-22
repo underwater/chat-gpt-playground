@@ -2,6 +2,11 @@
 
 This is a prototype for building integrations with ChatGPT. OpenAI does not yet have an official API for ChatGPT, so this project uses [chatgpt-api](https://github.com/transitive-bullshit/chatgpt-api). The package uses Puppeteer to authenticate through Chrome, and then afterwards you can interact with ChatGPT programmatically.
 
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/17437698/213896672-072e6c60-16fd-40c3-a302-f980f8ea335f.png" alt="chatgpt chat interface"/>
+</div>
+
+
 # Installation
 
 If you haven't already, install [Node](https://nodejs.org/en). v18 or higher is required.
